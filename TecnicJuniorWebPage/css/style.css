@@ -1,0 +1,27 @@
+:root{
+    --negro:#000000;
+    --dorado:#EFB810;
+    --gris:#8A8A89;
+    --fuente:'Roboto Mono', monospace;;
+}
+
+body {
+    background-color: var(--negro);
+}
+
+header {
+    background-color: var(--gris);
+}
+
+.header_titulo{
+    font-family: var(--fuente);
+    color: var(--dorado);
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.header_titulo_span{
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
