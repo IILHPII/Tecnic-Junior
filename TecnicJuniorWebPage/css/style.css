@@ -2,6 +2,246 @@
     --negro:#000000;
     --dorado:#EFB810;
     --gris:#8A8A89;
+    --grisMasClaro:#c9c9c9;
+    --blanco:#ffffff;
     --fuente:'Roboto Mono', monospace;;
 }
+
+/** Scroll Snap**/
+.servicios,
+.navegacion-principal,
+.formulario {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box; /* Hack para Box Model **/
+    
+}
+
+body{
+    background-image: url("../img/fondoDegradado2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    background-color: var(--negro);
+    display: block;
+    text-align: center;
+    height: 100%;
+    width:100%;
+    padding-right: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+footer{
+    background:var(--negro);
+}
+
+/* Tipografia */
+h1 {
+    font-size: 3.8rem;
+}
+h2 {
+    font-size: 2.8rem;
+}
+h3 {
+    font-size: 1.8rem;
+}
+h1,h2,h3 {
+    text-align: center;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+
+.hero{
+    background-image:url("../img/fondo2.jpg");
+    box-shadow: 0 0 25px #000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    position: relative;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+    
+}
+
+
+
+.titulo{
+    font-family: var(--fuente);
+    color: var(--dorado);
+    
+}
+
+.titulo_span{
+    font-size: 1rem;
+}
+
+::before, ::after {
+    box-sizing: inherit;
+  }
+
+
+.barra_navegador{
+    display: block;
+    text-align: center;
+    background-color: #000000;
+    color: var(--negro);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 1px;
+    padding: 1rem;
+}
+
+.barra_navegador a:hover {
+    color: var(--dorado);
+}
+
+.barra_navegacion_links{
+    font-family: var(--fuente);
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--blanco);
+    padding-top: 1rem;
+    padding-right: 10rem;
+}
+
+.contenedor{
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.boton {
+    background-color: var(--dorado);
+    color: var(--negro);
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+    border: none;
+}
+@media (min-width: 768px) {
+    .boton {
+        width: auto;
+    }
+}
+.boton:hover {
+    cursor: pointer;
+}
+
+.contenedor {
+    max-width: 120rem;
+    
+    margin: 0 auto;
+}
+
+/** Servicios **/
+@media (min-width: 768px) {
+    .servicios {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem;
+    }
+}
+
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicio .iconos {
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--negro);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/** Contacto **/
+.formulario {
+    background-color: var(--grisMasClaro);
+    backdrop-filter: blur(0.1);
+    width: min( 60rem, 100% ); /** Utilizar el valor más pequeño **/
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.formulario fieldset {
+    border: none;
+}
+.formulario legend {
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--negro);
+}
+
+@media (min-width: 768px) {
+    .contenedor-campos {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto 20rem ;
+        column-gap: 1rem;
+    }
+
+    .campo:nth-child(3),
+    .campo:nth-child(4) {
+        grid-column: 1 / 3;
+    }
+}
+.campo {
+    margin-bottom: 1rem;
+
+}
+.campo label {
+    color: var(--blanco);
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: .5rem;
+    display: block;
+}
+.campo textarea {
+    height: 20rem;
+}
+
+#textArea{
+    resize: none;
+}
+
+.input-text {
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+
+
+
 
