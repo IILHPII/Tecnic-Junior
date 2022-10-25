@@ -1,0 +1,156 @@
+:root{
+    --negro:#000000;
+    --dorado:#EFB810;
+    --gris:#8A8A89;
+    --grisMasClaro:#c9c9c9;
+    --blanco:#ffffff;
+    --fuente:'Roboto Mono', monospace;;
+}
+
+/** Scroll Snap**/
+.servicios,
+.navegacion-principal,
+.formulario {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box; /* Hack para Box Model **/
+    
+}
+
+body{
+    background-image: url("../img/fondoDegradado2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    background-color: var(--negro);
+    display: block;
+    text-align: center;
+    height: 100%;
+    width:100%;
+    padding-right: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+footer{
+    background:var(--negro);
+}
+
+/* Tipografia */
+h1 {
+    font-size: 3.8rem;
+}
+h2 {
+    font-size: 2.8rem;
+}
+h3 {
+    font-size: 1.8rem;
+}
+h1,h2,h3 {
+    text-align: center;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+.titulo{
+    font-family: var(--fuente);
+    color: var(--dorado);
+    
+}
+
+.titulo_span{
+    font-size: 1rem;
+}
+
+::before, ::after {
+    box-sizing: inherit;
+  }
+
+
+.barra_navegador{
+    display: block;
+    text-align: center;
+    background-color: #000000;
+    color: var(--negro);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 1px;
+    padding: 1rem;
+}
+
+.barra_navegador a:hover {
+    color: var(--dorado);
+}
+
+.barra_navegacion_links{
+    font-family: var(--fuente);
+    text-decoration: none;
+    font-weight: bolder;
+    color: var(--blanco);
+    padding-top: 1rem;
+    padding-right: 10rem;
+}
+
+
+
+.contenedor{
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
+    background-color: var(--blanco);
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    border-radius: 1rem;
+}
+
+
+.carousel {
+    max-width: 1000px;
+    max-height: 1000px;
+    margin: 0 auto;
+    display: flex;
+}
+#imagen {
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+}
+
+.boton {
+    display: inline-block;
+    width: 200px;
+    padding: 8px;
+    color: var(--blanco);
+    border: 2px solid var(--blanco);
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    transition: background-color 0.2s ease-out,
+                color 0.2s ease-out;
+}
+@media (min-width: 768px) {
+    .boton {
+        width: auto;
+    }
+}
+.boton:hover,
+.boton:active {
+  background-color: var(--blanco);
+  color: #000;
+  transition: background-color 0.3s ease-in,
+              color 0.3s ease-in;
+}
+
+
