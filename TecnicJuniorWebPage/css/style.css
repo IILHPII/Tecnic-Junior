@@ -4,7 +4,8 @@
     --gris:#8A8A89;
     --grisMasClaro:#c9c9c9;
     --blanco:#ffffff;
-    --fuente:'Roboto Mono', monospace;;
+    --fuente:'Bebas Neue', cursive;
+    --fuenteParrafos:'Abel', sans-serif;
 }
 
 /** Scroll Snap**/
@@ -58,10 +59,12 @@ h3 {
 }
 h1,h2,h3 {
     text-align: center;
+    font-family: var(--fuente);
 }
 
 p{
-    font-size: 1.5rem;
+    font-family: var(--fuenteParrafos);
+    font-size: 2rem;
 }
 
 
@@ -77,33 +80,79 @@ p{
     
 }
 
+.redes{
+    display: flex;
+    max-width: 300px;
+    margin: 0 auto;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding: 1rem 3rem 3rem;
+    
+}
 
+.redes-iconos{
+    display: flex;
+    
+}
+
+#animacion-whatsapp:hover{
+    transform: scale(1.15);
+    
+}
+
+.iconos-posicionamiento{
+    padding: auto;
+    margin-inline-end: auto;
+    
+}
 
 .titulo{
     font-family: var(--fuente);
+    font-size: 4rem;
     color: var(--dorado);
     
 }
 
 .titulo_span{
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 ::before, ::after {
     box-sizing: inherit;
   }
 
+  .barra_navegador{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: var(--negro);
+    }
 
-.barra_navegador{
+    @media (min-width: 768px) {
+    .barra_navegador{
+    flex-direction: row;
+
+    }
+    }
+    
+    .barra_navegador a {
     display: block;
     text-align: center;
-    background-color: #000000;
-    color: var(--negro);
+    color: var(--blanco);
     text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: 1px;
+    font-size: 2rem;
+    font-weight: 700;
     padding: 1rem;
-}
+    }
+    .navegacion-principal a:hover {
+    background-color: var(--primario);
+    color: var(--oscuro);
+    }
+    
+
+  
+
+
 
 .barra_navegador a:hover {
     color: var(--dorado);
@@ -112,6 +161,7 @@ p{
 .barra_navegacion_links{
     font-family: var(--fuente);
     text-decoration: none;
+    font-size: 2rem;
     font-weight: bolder;
     color: var(--blanco);
     padding-top: 1rem;
@@ -190,6 +240,10 @@ p{
     border-radius: 1rem;
 }
 
+#titulo_contacto{
+    font-family: var(--fuente);
+}
+
 .formulario fieldset {
     border: none;
 }
@@ -232,6 +286,8 @@ p{
 
 #textArea{
     resize: none;
+    font-family: var(--fuenteParrafos);
+    font-size: 1.5rem;
 }
 
 .input-text {
@@ -239,6 +295,11 @@ p{
     border: none;
     padding: 1.5rem;
     border-radius: .5rem;
+}
+
+#texto_input{
+    font-family: var(--fuenteParrafos);
+    font-size: 1.5rem;
 }
 
 

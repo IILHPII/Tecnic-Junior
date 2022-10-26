@@ -4,7 +4,7 @@
     --gris:#8A8A89;
     --grisMasClaro:#c9c9c9;
     --blanco:#ffffff;
-    --fuente:'Roboto Mono', monospace;;
+    --fuente:'Bebas Neue', cursive;
 }
 
 /** Scroll Snap**/
@@ -58,6 +58,7 @@ h3 {
 }
 h1,h2,h3 {
     text-align: center;
+    font-family: var(--fuente);
 }
 
 p{
@@ -66,12 +67,13 @@ p{
 
 .titulo{
     font-family: var(--fuente);
+    font-size: 4rem;
     color: var(--dorado);
     
 }
 
 .titulo_span{
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 ::before, ::after {
@@ -87,7 +89,7 @@ p{
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: 1px;
-    padding: 1rem;
+    margin: 0 auto;
 }
 
 .barra_navegador a:hover {
@@ -98,6 +100,7 @@ p{
     font-family: var(--fuente);
     text-decoration: none;
     font-weight: bolder;
+    font-size: 2rem;
     color: var(--blanco);
     padding-top: 1rem;
     padding-right: 10rem;

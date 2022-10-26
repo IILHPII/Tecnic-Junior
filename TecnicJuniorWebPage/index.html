@@ -7,12 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;1,400&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+    <link href="css/style.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet"> 
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
     <title>Document</title>
 </head>
@@ -24,7 +23,7 @@
     </header>
 
     <div class="barra_navegador">
-        <a class="barra_navegacion_links" href="#">
+        <a class="barra_navegacion_links" href="servicios.html">
             Servicios
         </a>
         <a class="barra_navegacion_links" href="#">
@@ -35,16 +34,67 @@
         </a>
 
     </div>
+    
 
     <section class="hero">
-        <p>
-            hola
-        </p>
+    
     </section>
 
 
-    <main class="contenedor sombra">
+    
 
+    <main class="contenedor sombra">
+        <section>
+            <h1>Mis redes sociales</h1>
+        </section>
+        <section class="redes">
+            <div class="redes-iconos">
+                <div class="iconos-posicionamiento">
+                    <a  href="https://www.tiktok.com/@tecnicjunior" target="_blank" rel="noopener noreferrer">
+                        <svg id="animacion-whatsapp" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-tiktok" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M9 12a4 4 0 1 0 4 4v-12a5 5 0 0 0 5 5" />
+                          </svg>
+                    </a>
+                </div>
+            </div>
+            
+    
+            <div class="iconos-posicionamiento">
+                <a href="https://www.instagram.com/tecnic_junior/" target="_blank" rel="noopener noreferrer">
+                    <svg id="animacion-whatsapp" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <rect x="4" y="4" width="16" height="16" rx="4" />
+                        <circle cx="12" cy="12" r="3" />
+                        <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                      </svg>
+                </a>
+            </div>
+    
+            <div class="iconos-posicionamiento">
+                <a href="https://wa.me/59899768698" target="_blank" rel="noopener noreferrer">
+                    <svg id="animacion-whatsapp" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+                        <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1" />
+                      </svg>
+                </a>
+               </div>
+
+
+               <div class="iconos-posicionamiento">
+                <a href="https://wa.me/59899768698" target="_blank" rel="noopener noreferrer">
+                    <svg id="animacion-whatsapp" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                      </svg>
+                </a>
+               </div>   
+    
+               
+        </section>    
+
+        
         <div>
             <h1>¿Por qué elegirnos?</h1>
         </div>
@@ -160,32 +210,32 @@
             <h2>Contacto</h2>
             <form class="formulario">
                 <fieldset>
-                    <legend>Contactános llenando todos los campos</legend>
+                    <legend id="titulo_contacto">Contactános llenando todos los campos</legend>
 
                     <div class="contenedor-campos">
                         <div class="campo">
-                            <label>Nombre</label>
-                            <input class="input-text" type="text" placeholder="Tu Nombre">
+                            <label id="titulo_contacto">Nombre</label>
+                            <input id="texto_input" class="input-text" type="text" placeholder="Tu Nombre">
                         </div>
 
                         <div class="campo">
-                            <label>Teléfono</label>
-                            <input class="input-text" type="tel" placeholder="Tu Teléfono">
+                            <label id="titulo_contacto">Teléfono</label>
+                            <input  id="texto_input"  class="input-text" type="tel" placeholder="Tu Teléfono">
                         </div>
 
                         <div class="campo">
-                            <label>Correo</label>
-                            <input class="input-text" type="email" placeholder="Tu Email">
+                            <label id="titulo_contacto">Correo</label>
+                            <input  id="texto_input"  class="input-text" type="email" placeholder="Tu Email">
                         </div>
                 
                         <div class="campo">
-                            <label>Mensaje</label>
-                            <textarea id="textArea" class="input-text"></textarea>
+                            <label id="titulo_contacto">Mensaje</label>
+                            <textarea  id="textArea" class="input-text"></textarea>
                         </div>
                     </div> 
 
                     <div class="alinear-derecha flex">
-                        <input class="boton w-sm-100" type="submit" value="Enviar">
+                        <input id="titulo_contacto" class="boton w-sm-100" type="submit" value="Enviar">
                     </div>
                 </fieldset>
             </form>
