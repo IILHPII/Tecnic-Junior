@@ -74,26 +74,43 @@ p{
     background-repeat: no-repeat;
     background-size: cover;
     height: 450px;
-    position: relative;
     margin-bottom: 2rem;
     padding-top: 1rem;
     
 }
 
+.contenido-hero {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.contenido-hero h2, 
+.contenido-hero p {
+    color: var(--blanco);
+}
+.contenido-hero .ubicacion {
+    display: flex;
+    align-items: flex-end;
+}
+
 .redes{
     display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.redes{
     max-width: 300px;
     margin: 0 auto;
-    flex-direction: row-reverse;
-    justify-content: center;
-    padding: 1rem 3rem 3rem;
     
 }
 
-.redes-iconos{
-    display: flex;
-    
-}
 
 #animacion-whatsapp:hover{
     transform: scale(1.15);
@@ -188,10 +205,12 @@ p{
     width: 90%;
     text-align: center;
     border: none;
+    width: 100%;
 }
 @media (min-width: 768px) {
     .boton {
-        width: auto;
+        width: 20%;
+        
     }
 }
 .boton:hover {
