@@ -303,7 +303,7 @@ p{
     height: 20rem;
 }
 
-#textArea{
+#campo_texto{
     resize: none;
     font-family: var(--fuenteParrafos);
     font-size: 1.5rem;
@@ -314,9 +314,12 @@ p{
     border: none;
     padding: 1.5rem;
     border-radius: .5rem;
+    font-family: var(--fuenteParrafos);
+    font-size: 1.5rem;
 }
 
-#texto_input{
+.texto_input{
+    resize: none;
     font-family: var(--fuenteParrafos);
     font-size: 1.5rem;
 }
