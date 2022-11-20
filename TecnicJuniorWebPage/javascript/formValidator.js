@@ -2,7 +2,11 @@ const nombre = document.getElementById("campo_nombre");
 const telefono = document.getElementById("campo_telefono");
 const email = document.getElementById("campo_email");
 const campo = document.getElementById("campo_texto");
-const parrrafo = document.getElementById("warning")
+const parrrafo = document.getElementById("warning");
+const colorEnviado = document.getElementById("warning");
+
+
+
 
 formulariojs.addEventListener("submit",e=>{
     e.preventDefault()
@@ -30,7 +34,8 @@ formulariojs.addEventListener("submit",e=>{
     if(entrar){
         parrrafo.innerHTML = warning
     }else{
-        parrrafo.innerHTML = "Enviado"
+        parrrafo.innerHTML = "Enviado!"
+        colorEnviado.style.color='#4EB737';
     }
 
 

@@ -1,6 +1,7 @@
 :root{
     --negro:#000000;
     --dorado:#EFB810;
+    --rojo:#EE0B0B;
     --gris:#8A8A89;
     --grisMasClaro:#c9c9c9;
     --blanco:#ffffff;
@@ -325,6 +326,22 @@ p{
 }
 
 
+#warning{
+    text-align: center;
+    font-family: var(--fuenteParrafos);
+    color: var(--rojo);
+    animation: fadeIn 3s ease;
+}
 
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+        filter: blur(20px);
+    }
+    10%{
+        opacity: 1;
+        filter: brightness(2) blur(10px);
+    }
+}
 
 
