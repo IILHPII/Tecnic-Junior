@@ -53,7 +53,7 @@ formulariojs.addEventListener("submit", e => {
     if (entrar) {
         parrrafo.innerHTML = warning
     } else {
-        parrrafo.innerHTML = "Mail valido! Presione enviar nuevamente para confirmar el envio"
+        parrrafo.innerHTML = "Email valido! Presione enviar nuevamente para confirmar el envio"
         colorEnviado.style.color = '#4EB737';
         envio = true
     }

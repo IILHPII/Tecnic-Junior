@@ -367,3 +367,17 @@ p {
 #btn_enviar{
     font-family: var(--fuente);
 }
+
+.miMision{
+    text-align: center;
+}
+
+.listaElementos{
+    font-family: var(--fuenteParrafos);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.puntoLista{
+    font-size: 1rem;
+}
