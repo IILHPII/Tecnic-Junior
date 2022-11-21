@@ -404,3 +404,9 @@ p {
     border-radius: 1rem;
     margin-top: 1.5rem;
 }
+
+.firma{
+    font-family: var(--fuenteParrafos);
+    text-align: center;
+    opacity: 50%;
+}

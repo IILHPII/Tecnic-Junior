@@ -146,6 +146,7 @@ p {
     height: 500px;
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .boton {

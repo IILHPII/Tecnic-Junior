@@ -1,9 +1,22 @@
 window.onload = function () {
     // Variables
     const IMAGENES = [
-        'img/carrete/animes.jpg',
-        'img/carrete/luffy.jpg'
+        'img/carrete/1.jpeg',
+        'img/carrete/2.jpeg',
+        'img/carrete/3.jpeg',
+        'img/carrete/4.jpeg',
+        'img/carrete/5.jpeg',
+        'img/carrete/6.jpeg',
+        'img/carrete/7.jpeg',
+        'img/carrete/8.jpeg',
+        'img/carrete/9.jpeg',
+        'img/carrete/10.jpeg',
+        'img/carrete/11.jpeg',
+        'img/carrete/12.jpeg', 
+        'img/carrete/13.jpeg',
+        'img/carrete/14.jpeg'
     ];
+
     const TIEMPO_INTERVALO_MILESIMAS_SEG = 1000;
     let posicionActual = 0;
     let $botonRetroceder = document.querySelector('#retroceder');
