@@ -381,3 +381,26 @@ p {
 .puntoLista{
     font-size: 1rem;
 }
+
+.servicio_Software{
+    border: 0.5rem solid #000000 ;
+    border-radius: 1rem;
+    margin: 0 auto;
+}
+
+.icono_Software{
+    margin: auto;
+    height: 10rem;
+    width: 10rem;
+    background-color: var(--negro);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}   
+
+.servicio_Hardware{
+    border: 0.5rem solid #000000 ;
+    border-radius: 1rem;
+    margin-top: 1.5rem;
+}
